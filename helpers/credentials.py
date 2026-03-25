@@ -27,3 +27,7 @@ EXISTING_EMAIL = "admin@bugbank.fr"
 EXISTING_USERNAME = "admin"
 EXISTING_PASS = "Admin123!"
 
+# Added for TC AUTH 06
+UNKNOWN_EMAIL = "unknown@bugbank.fr"
+UNKNOWN_PASS = "FakePass123!"
+
