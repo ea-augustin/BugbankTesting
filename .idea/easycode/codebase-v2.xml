@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
+    <option name="projectFiles" value="$PROJECT_DIR$/features/steps/CreationComptes.py;D:/ENI - Testeur/Stage/BugBankTesting/features/steps/deconnexion.py;D:/ENI - Testeur/Stage/BugBankTesting/features/steps/login.py;D:/ENI - Testeur/Stage/BugBankTesting/helpers/auth.py;D:/ENI - Testeur/Stage/BugBankTesting/helpers/credentials.py" />
+  </component>
+</project>
