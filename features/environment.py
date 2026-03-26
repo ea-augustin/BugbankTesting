@@ -6,10 +6,19 @@ def before_all(context):
     chrome_options = Options()
     chrome_options.add_argument("--start-maximized")
 
-    # Create the browser ONCE for all scenarios
+    # Dossier où Chrome doit télécharger les fichiers
+    prefs = {
+        "download.default_directory": r"D:\ENI - Testeur\Stage\csv",
+        "download.prompt_for_download": False,
+        "download.directory_upgrade": True,
+        "safebrowsing.enabled": True
+    }
+    chrome_options.add_experimental_option("prefs", prefs)
+
+    # Lancement du navigateur
     context.driver = webdriver.Chrome(options=chrome_options)
 
-    # Base URL for your BugBank instance
+    # URL de base de l'application
     context.base_url = "https://testapp.campus-eni.fr"
 
 
