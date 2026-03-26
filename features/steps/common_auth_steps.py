@@ -8,7 +8,7 @@ from helpers.auth import login
 from helpers.credentials import EMAIL, PASSWORD, UPDATEDPASSWORD
 
 
-@given("l'utilisateur est connecte")
+@given("utilisateur est connecte")
 def step_impl(context):
     context.driver = webdriver.Chrome()
     context.driver.maximize_window()

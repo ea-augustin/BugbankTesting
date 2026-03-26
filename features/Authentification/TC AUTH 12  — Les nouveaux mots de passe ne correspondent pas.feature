@@ -3,7 +3,7 @@ Feature: US AUTH 05 — Les nouveaux mots de passe ne correspondent pas
   entre le nouveau mot de passe et sa confirmation.
 
   Scenario: TC AUTH 12 - Mots de passe ne correspondent pas
-    Given l’utilisateur est connecté
+    Given utilisateur est connecte
     When Clique sur le bouton mot de passe
     And saisit le mot de passe actuel correct
     And saisit un nouveau mot de passe
@@ -12,4 +12,3 @@ Feature: US AUTH 05 — Les nouveaux mots de passe ne correspondent pas
     Then le mot de passe actuel doit être validé
     And le système doit détecter la non correspondance
     And aucun changement ne doit être sauvegardé
-   

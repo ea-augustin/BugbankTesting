@@ -9,7 +9,7 @@ Feature: US AUTH 04 — Mot de passe actuel incorrect
 
 
 Scenario: TC AUTH 11 - Mot de passe actuel incorrect
-  Given l'utilisateur est connecte
+  Given utilisateur est connecte
   When Clique sur le bouton mot de passe
   When saisit un mot de passe actuel incorrect
   When saisit un nouveau mot de passe
