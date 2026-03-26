@@ -14,7 +14,7 @@ def step_impl(context):
     history_btn.click()
 
 
-@then("l’utilisateur voir L'historique")
+@then("l’utilisateur voir l'historique")
 def step_impl(context):
     # The history page contains a table with:
     # <div class="table-wrapper" data-testid="history-table">

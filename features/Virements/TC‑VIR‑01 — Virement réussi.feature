@@ -1,8 +1,15 @@
-# Created by elite at 26/03/2026
 Feature: Virement entre comptes
-  Cette fonctionnalité permet à l’utilisateur d’effectuer un virement entre deux comptes.
+  Cette fonctionnalité permet à un utilisateur d’effectuer un virement
+  depuis l’un de ses comptes vers un autre compte interne ou externe.
+  L’objectif est de vérifier que le formulaire de virement fonctionne
+  correctement, que les validations sont appliquées et que les soldes
+  des comptes sont mis à jour après l’opération.
 
-  Scenario: TC VIR 01 - Virement réussi
+  Contexte:
+    Étant donné que l’utilisateur possède au moins un compte bancaire
+    Et qu’il est authentifié sur l’application
+
+  Scenario: TC VIR 01 — Virement réussi
     Given l’utilisateur est connecté
     When utilisateur se rend sur account
     Then clique sur le bouton Virement
